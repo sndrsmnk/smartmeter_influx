@@ -1,0 +1,12 @@
+[Unit]
+Description=P1 Smart Meter to InfluxDB Daemon
+Requires=network.target
+After=network.target
+
+[Service]
+ExecStart=/opt/smartmeter_influx/smartmeter_influx
+KillMode=process
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
