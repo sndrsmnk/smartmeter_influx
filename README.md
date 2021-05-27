@@ -1,3 +1,11 @@
+# NOTE
+
+There's much better alternatives nowadays. Do not use this setup.
+
+* https://github.com/dsmrreader/dsmr-reader
+* https://github.com/psy0rz/p1_dsmr_to_influxdb
+
+<strike>
 # smartmeter_influx
 Grafana, InfluxDB and a python script to graph your P1 Smart Meter engergy consumption reports.
 
@@ -27,3 +35,4 @@ CREATE CONTINUOUS QUERY cq_smartmeter_daily ON p1smartmeter
             INTO p1smartmeter.raw.smartmeter_daily
             FROM p1smartmeter.raw.smartmeter GROUP BY time(1d) END
 ```
+</strike>
